@@ -14,5 +14,18 @@
 			"export class ${Name}Module{}"
 		],
 		"description": "Creates a new Angular2 module"
+	},
+
+	"Angular2 Property": {
+		"prefix": "ng2 property",
+		"body": [
+			"_${name}:${type}",
+			"@Input",
+			"set ${name}(${name}:${type}){",
+			"this._${name} = ${name};",
+			"}",
+			"get ${name}() { return this._${name}; } "
+		],
+		"description": "Creates a new Angular2 module"
 	}
 }
