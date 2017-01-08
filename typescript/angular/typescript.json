@@ -20,9 +20,9 @@
 		"prefix": "ng2 property",
 		"body": [
 			"_${name}:${type}",
-			"@Input",
+			"@Input()",
 			"set ${name}(${name}:${type}){",
-			"this._${name} = ${name};",
+			"	this._${name} = ${name};",
 			"}",
 			"get ${name}() { return this._${name}; } "
 		],
